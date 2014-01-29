@@ -1,0 +1,13 @@
+{application, smurf,
+ [
+  {description, ""},
+  {vsn, "0.1.0"},
+  {modules, [smurf]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { smurf_app, []}},
+  {env, []}
+ ]}.
