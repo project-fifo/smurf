@@ -110,7 +110,7 @@ enable(Service) ->
              Opts :: [svcs_opt() | enable_opt()]) ->
                     ok | {error, N::pos_integer()}.
 enable(Service, Opts) ->
-    svcadm(svcadm_opts(Opts,["enable", enable_opts(Opts, [Service])])).
+    svcadm(svcadm_opts(Opts,["enable" | enable_opts(Opts, [Service])])).
 
 -spec enable_opts([enable_opt() | term()], [arg()]) -> [arg()].
 
@@ -134,7 +134,7 @@ disable(Service) ->
               Opts :: [svcs_opt() | disable_opt()]) ->
                      ok | {error, N::pos_integer()}.
 disable(Service, Opts) ->
-    svcadm(svcadm_opts(Opts,["disable", disable_opts(Opts, [Service])])).
+    svcadm(svcadm_opts(Opts,["disable" | disable_opts(Opts, [Service])])).
 
 -spec disable_opts([enable_opt() | term()], [arg()]) -> [arg()].
 
