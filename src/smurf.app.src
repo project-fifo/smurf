@@ -1,6 +1,6 @@
 {application, smurf,
  [
-  {description, ""},
+  {description, "SMF interfacing library for erlang"},
   {vsn, "0.1.0"},
   {modules, [smurf]},
   {registered, []},
