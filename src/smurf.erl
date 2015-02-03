@@ -155,7 +155,7 @@ restart(Service) ->
               Opts :: [svcs_opt()]) ->
                      ok | {error, N::pos_integer()}.
 restart(Service, Opts) ->
-    svcadm(svcadm_opts(Opts, ["clear", Service])).
+    svcadm(svcadm_opts(Opts, ["restart", Service])).
 
 
 -spec refresh(Service :: service()) -> ok | {error, N::pos_integer()}.
@@ -166,7 +166,7 @@ refresh(Service) ->
               Opts :: [svcs_opt()]) ->
                      ok | {error, N::pos_integer()}.
 refresh(Service, Opts) ->
-    svcadm(svcadm_opts(Opts, ["clear", Service])).
+    svcadm(svcadm_opts(Opts, ["refresh", Service])).
 
 -spec clear(Service :: service()) -> ok | {error, N::pos_integer()}.
 clear(Service) ->
