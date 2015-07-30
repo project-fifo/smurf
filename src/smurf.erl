@@ -218,9 +218,6 @@ mark_opts([_ | R] , Args) ->
 mark_opts([] , Args) ->
     Args.
 
-
-
-
 svcadm_opts([{zone, Zone} | R] , Args) ->
     svcadm_opts(R, ["-z", Zone | Args]);
 svcadm_opts([_ | R] , Args) ->

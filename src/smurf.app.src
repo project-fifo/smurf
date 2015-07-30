@@ -1,13 +1,11 @@
-{application, smurf,
- [
-  {description, "SMF interfacing library for erlang"},
-  {vsn, "0.1.1"},
-  {modules, [smurf]},
-  {registered, []},
-  {applications, [
-                  kernel,
-                  stdlib
-                 ]},
-  {mod, { smurf_app, []}},
-  {env, []}
- ]}.
+{application,smurf,
+             [{description,"SMF interfacing library for erlang"},
+              {vsn,"0.1.2"},
+              {modules,[smurf]},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{smurf_app,[]}},
+              {env,[]},
+              {contributors,["Heinz N. Gies"]},
+              {licenses,["CDDL"]},
+              {links,[{"Github","https://github.com/project-fifo/smurf"}]}]}.
